@@ -4,7 +4,25 @@ const GOOGLE_PLATORM_LINK = "https://ai.google.dev/"
 
 // Google Models (UPDATED 12/22/23) -----------------------------
 
-// Gemini 1.5 Flash
+const GEMINI_2_5_FLASH: LLM = {
+  modelId: "gemini-2.5-flash",
+  modelName: "Gemini 2.5 Flash",
+  provider: "google",
+  hostedId: "gemini-2.5-flash",
+  platformLink: GOOGLE_PLATORM_LINK,
+  imageInput: false
+}
+
+const GEMINI_2_5_FLASH_PREVIEW: LLM = {
+  modelId: "gemini-2.5-flash-lite-preview-06-17",
+  modelName: "Gemini 2.5 Flash Preview",
+  provider: "google",
+  hostedId: "gemini-2.5-flash-preview",
+  platformLink: GOOGLE_PLATORM_LINK,
+  imageInput: false
+}
+
+
 const GEMINI_1_5_FLASH: LLM = {
   modelId: "gemini-1.5-flash",
   modelName: "Gemini 1.5 Flash",
@@ -44,4 +62,4 @@ const GEMINI_PRO_VISION: LLM = {
   imageInput: true
 }
 
-export const GOOGLE_LLM_LIST: LLM[] = [GEMINI_PRO, GEMINI_PRO_VISION, GEMINI_1_5_PRO, GEMINI_1_5_FLASH]
+export const GOOGLE_LLM_LIST: LLM[] = [GEMINI_2_5_FLASH, GEMINI_2_5_FLASH_PREVIEW, GEMINI_PRO, GEMINI_PRO_VISION, GEMINI_1_5_PRO, GEMINI_1_5_FLASH]

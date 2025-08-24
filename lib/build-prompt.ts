@@ -2,6 +2,7 @@ import { Tables } from "@/supabase/types"
 import { ChatPayload, MessageImage } from "@/types"
 import { encode } from "gpt-tokenizer"
 import { getBase64FromDataURL, getMediaTypeFromDataURL } from "@/lib/utils"
+import { createClient } from "@/supabase/server"
 
 const buildBasePrompt = (
   prompt: string,
